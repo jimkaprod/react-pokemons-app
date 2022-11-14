@@ -31,12 +31,11 @@ const PokemonForm: FunctionComponent<Props> = ({pokemon}) => {
 
     const history = useHistory();
 
-    const types: string[] = [
-        'Plante', 'Feu', 'Eau', 'Insecte', 'Normal', 'Electrik',
-        'Poison', 'Fée', 'Vol', 'Combat', 'Psy'
+    const types: number[] = [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
     ];
 
-    const hasType = (type: string): boolean => {
+    const hasType = (type: number): boolean => {
         return form.types.value.includes(type);
     }
 
@@ -101,7 +100,7 @@ const PokemonForm: FunctionComponent<Props> = ({pokemon}) => {
         return newForm.name.isValid && newForm.hp.isValid && newForm.cp.isValid;
       }
 
-      const isTypesValid = (type: string): boolean => {
+      const isTypesValid = (type: number): boolean => {
         // Cas n°1: Le pokémon a un seul type, qui correspond au type passé en paramètre.
         // Dans ce cas on revoie false, car l'utilisateur ne doit pas pouvoir décoché ce type (sinon le pokémon aurait 0 type, ce qui est interdit)
         if (form.types.value.length === 1 && hasType(type)) {
@@ -119,15 +118,15 @@ const PokemonForm: FunctionComponent<Props> = ({pokemon}) => {
         return true;
       }
 
-    const selectType = (type:string, e: React.ChangeEvent<HTMLInputElement>) => {
+    const selectType = (type:number, e: React.ChangeEvent<HTMLInputElement>) => {
         const checked = e.target.checked;
         let newField: Field;
 
         if(checked) {
-            const newTypes: string[] = form.types.value.concat([type]);
+            const newTypes: number[] = form.types.value.concat([type]);
             newField = {value: newTypes};
         } else {
-            const newTypes: string[] = form.types.value.filter((currentType: string) => currentType !== type);
+            const newTypes: number[] = form.types.value.filter((currentType: number) => currentType !== type);
             newField = {value: newTypes};
         }
 
@@ -197,7 +196,7 @@ const PokemonForm: FunctionComponent<Props> = ({pokemon}) => {
                   {types.map(type => (
                     <div key={type} style={{marginBottom: '10px'}}>
                       <label>
-                        <input id={type} type="checkbox" className="filled-in" value="{type}" disabled={!isTypesValid(type)} checked={hasType(type)} onChange={e => selectType(type, e)}></input>
+                        <input id="{type}" type="checkbox" className="filled-in" value="{type}" disabled={!isTypesValid(type)} checked={hasType(type)} onChange={e => selectType(type, e)}></input>
                         <span>
                           <p className={formatType(type)}>{ type }</p>
                         </span>

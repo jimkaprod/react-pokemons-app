@@ -1,0 +1,8 @@
+.filter-container {
+  display: flex;
+  box-sizing: border-box;
+  border-top: 1px solid black;
+  button {
+    flex-grow: 1;
+  }
+}

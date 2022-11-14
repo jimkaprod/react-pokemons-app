@@ -1,4 +1,46 @@
 {
+  "types": [
+    {
+      "id": 0,
+      "name": "ALL"
+    }, 
+    {
+      "id": 1,
+      "name": "Plante"
+    }, 
+    {
+      "id": 2,
+      "name": "Feu"
+    }, 
+    {
+      "id": 3,
+      "name": "Eau"
+    }, 
+    {
+      "id": 4,
+      "name": "Insecte"
+    }, 
+    {
+      "id": 5,
+      "name": "Poison"
+    }, 
+    {
+      "id": 6,
+      "name": "Normal"
+    }, 
+    {
+      "id": 7,
+      "name": "Vol"
+    }, 
+    {
+      "id": 8,
+      "name": "Electrik"
+    }, 
+    {
+      "id": 9,
+      "name": "Fée"
+    }
+  ],
   "pokemons": [
     {
       "id": 1,
@@ -6,7 +48,7 @@
       "hp": 25,
       "cp": 5,
       "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
-      "types": ["Plante", "Poison"]
+      "types": [1, 5]
      },
      {
       "id": 2,
@@ -14,7 +56,7 @@
       "hp": 28,
       "cp": 6,
       "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png",
-      "types": ["Feu"]
+      "types": [2]
      },
      {
       "id": 3,
@@ -22,7 +64,7 @@
       "hp": 21,
       "cp": 4,
       "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png",
-      "types": ["Eau"]
+      "types": [3]
      },
      {
       "id": 4,
@@ -30,7 +72,7 @@
       "hp": 17,
       "cp": 3,
       "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png",
-      "types": ["Insecte", "Poison"]
+      "types": [4, 5]
      },
      {
       "id": 5,
@@ -38,7 +80,7 @@
       "hp": 30,
       "cp": 7,
       "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png",
-      "types": ["Normal", "Vol"]
+      "types": [6, 7]
      },
      {
       "id": 6,
@@ -46,7 +88,7 @@
       "hp": 18,
       "cp": 6,
       "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/019.png",
-      "types": ["Normal"]
+      "types": [6]
      },
      {
       "id": 7,
@@ -54,7 +96,7 @@
       "hp": 14,
       "cp": 5,
       "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/021.png",
-      "types": ["Normal", "Vol"]
+      "types": [6, 7]
      },
      {
       "id": 8,
@@ -62,7 +104,7 @@
       "hp": 16,
       "cp": 4,
       "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/023.png",
-      "types": ["Poison"]
+      "types": [5]
      },
      {
       "id": 9,
@@ -70,7 +112,7 @@
       "hp": 21,
       "cp": 7,
       "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png",
-      "types": ["Electrik"]
+      "types": [8]
      },
      {
       "id": 10,
@@ -78,7 +120,7 @@
       "hp": 19,
       "cp": 3,
       "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/027.png",
-      "types": ["Normal"]
+      "types": [6]
      },
      {
       "id": 11,
@@ -86,7 +128,7 @@
       "hp": 25,
       "cp": 5,
       "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/035.png",
-      "types": ["Fée"]
+      "types": [9]
      },
      {
       "id": 12,
@@ -94,7 +136,7 @@
       "hp": 17,
       "cp": 8,
       "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/037.png",
-      "types": ["Feu"]
+      "types": [2]
      }
   ]
 }

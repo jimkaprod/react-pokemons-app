@@ -2,6 +2,7 @@ import React, { FunctionComponent, useState, useEffect } from 'react';
 import Pokemon from '../models/pokemon';
 import PokemonCard from '../components/pokemon-card';
 import PokemonService from '../services/pokemon-service';
+import PokemonFilter from '../components/pokemon-filter/pokemon-filter';
 
 
 const PokemonList: FunctionComponent = () => {
@@ -15,6 +16,7 @@ const PokemonList: FunctionComponent = () => {
 
     return (
         <div>
+            <PokemonFilter></PokemonFilter>
             <h1 className="center">Pokédex</h1>
             <div className="container"> 
                 <div className="row"> 

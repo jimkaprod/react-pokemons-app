@@ -4,7 +4,8 @@ import PokemonsDetail from './pages/pokemon-detail';
 import PokemonList from './pages/pokemon-list';
 import PageNotFound from './pages/page-not-found';
 import PokemonEdit from './pages/pokemon-edit';
-
+import PokemonFilter from './components/pokemon-filter/pokemon-filter';
+import './App.scss';
 const App: FunctionComponent = () => {
     return (
         <Router>

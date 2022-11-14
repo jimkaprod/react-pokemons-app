@@ -2,7 +2,7 @@ import React, { FunctionComponent, useState } from 'react';
 import formatDate from '../helpers/format-date';
 import formatType from '../helpers/format-type';
 import Pokemon from '../models/pokemon';
-import './pokemon-card.css'
+import './pokemon-card.scss'
 import { useHistory } from 'react-router-dom';
 
 type Props = {
